@@ -21,3 +21,9 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+
+    lower_phrase = ''.join(phrase.split()).lower()
+
+    reversed_lower_phrase = lower_phrase[::-1]
+
+    return lower_phrase == reversed_lower_phrase
