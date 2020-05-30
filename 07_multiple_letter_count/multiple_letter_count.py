@@ -11,8 +11,13 @@ def multiple_letter_count(phrase):
     letter_count = {}
 
     for letter in phrase:
+
         if letter in letter_count:
+
             letter_count[letter] += 1
+
         else:
+
             letter_count[letter] = 1
+
     return letter_count

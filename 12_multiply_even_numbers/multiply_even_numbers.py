@@ -23,8 +23,4 @@ def multiply_even_numbers(nums):
 
             product *= num
 
-        return product
-
-    else:
-
-        return 1
+    return product

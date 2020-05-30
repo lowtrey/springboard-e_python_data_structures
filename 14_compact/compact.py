@@ -5,6 +5,4 @@ def compact(lst):
         [1, 2, 'All done']
     """
 
-    true_list = [value for value in lst if value]
-
-    return true_list
+    return [value for value in lst if value]

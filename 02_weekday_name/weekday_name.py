@@ -13,10 +13,16 @@ def weekday_name(day_of_week):
         >>> weekday_name(0)
     """
 
-    days = ["Sunday", "Monday", "Tuesday",
-            "Wednesday", "Thursday", "Friday", "Saturday"]
+    days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ]
 
     if day_of_week >= 1 and day_of_week <= 7:
+
         return days[day_of_week-1]
-    else:
-        return None
