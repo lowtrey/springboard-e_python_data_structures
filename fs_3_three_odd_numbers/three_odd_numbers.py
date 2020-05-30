@@ -13,3 +13,15 @@ def three_odd_numbers(nums):
         >>> three_odd_numbers([1, 2, 3, 3, 2])
         False
     """
+
+    index = 0
+
+    while index < (len(nums) - 2):
+
+        if ((nums[index] + nums[index+1] + nums[index+2]) % 2) != 0:
+
+            return True
+
+        index += 1
+
+    return False
