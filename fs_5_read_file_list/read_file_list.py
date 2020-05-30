@@ -20,8 +20,6 @@ def read_file_list(filename):
     # (end-of-line character) at the end of each line, and you want to
     # strip that off before you print it. Do some research on that!
 
-    # filename += ".txt"
-
     import os
 
     __location__ = os.path.realpath(
