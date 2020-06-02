@@ -20,17 +20,12 @@ def read_file_list(filename):
     # (end-of-line character) at the end of each line, and you want to
     # strip that off before you print it. Do some research on that!
 
-    import os
+    file = open(filename, "r")
 
-    __location__ = os.path.realpath(
-        os.path.join(os.getcwd(), os.path.dirname(__file__)))
+    for line in file:
 
-    f = open(os.path.join(__location__, filename))
-
-    lines = f.readlines()
-
-    lines = [line.strip("\n") for line in lines]
-
-    for line in lines:
+        line = line.strip("\n")
 
         print(f"- {line}")
+
+    file.close()
